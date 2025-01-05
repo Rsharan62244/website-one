@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rhyno automobiles</title>
+    <link rel="icon" type="image" href="https://res.cloudinary.com/dafpg6hn0/image/upload/v1719165065/Black_logo_for_B_W_print_etylrj.png">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="cursor"></div>
+
+    <script>
+        const cursor = document.querySelector('.cursor');
+
+        document.addEventListener('mousemove', (e) => {
+            cursor.style.transform = `translate(${e.clientX}px, ${e.clientY}px) rotate(${window.scrollY}deg)`;
+            cursor.style.opacity = 1; // Show the cursor when moving
+        });
+
+        // Hide the cursor when not moving
+        document.addEventListener('mouseout', () => {
+            cursor.style.opacity = 0;
+        });
+    </script>
+    <div class="menu">
+        <ul class="options">
+            <li><a href="#"><img class="lpic" src="https://res.cloudinary.com/dafpg6hn0/image/upload/v1719165065/Black_logo_for_B_W_print_etylrj.png"  > </a></li>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="aboutus.html">About us</a></li>
+            <li ><a href="#">Products</a>
+                <ul id="submenu">
+                    <li><a href="product1.html">SE03 Lite</a></li>
+                    <li><a href="product2.html">SE03</a></li>
+                    <li><a href="product3.html">SE03 Max</a></li>
+                    <li><a href="compareall.html">compare</a></li>
+                </ul>
+                </li>
+            <li><a class="active" href="paymentgateway.html">Pre-book</a></li>
+            <li><a href="contactus.html">Contact us</a></li>
+            <li><a href="https://www.instagram.com/accounts/login/?hl=en"><img class="insta" src="https://static.vecteezy.com/system/resources/previews/022/498/176/non_2x/3d-render-camera-icon-isolated-on-transparent-background-camera-logo-for-web-site-app-ui-and-logo-free-png.png" alt="instagram" ></a>
+                <a href="https://www.linkedin.com/login"><img class="lin" src="https://www.pagetraffic.com/blog/wp-content/uploads/2022/09/linkedin-black-logo-icon.png" alt="linkedin" >
+                </a>
+            </li>
+    </div>
+    
+    <div class="container">
+        <form action="">
+        <div class="row" >
+            <div class="col">
+                <h2>Product</h2>
+                <div class="inputbox">
+                    <input type="checkbox" name="bike">SE03 Lite <span>Qty :</span>
+                    <input type="number" placeholder="no.of bikes"> <br>
+                    <input type="checkbox" name="bike2"> SE03<span>Qty :</span>
+                    <input type="number" placeholder="no.of bikes"><br>
+                    <input type="checkbox" name="bike3">SE03 Max<span>Qty :</span>
+                    <input type="number" placeholder="no.of bikes">
+                </div>
+
+                <h1>Customer Details</h1>
+                <div class="inputbox">
+                    <span>Name :</span>
+                    <input type="text" placeholder="name">
+                </div>
+                <div class="inputbox">
+                    <span>Age :</span>
+                    <input type="number" placeholder="age">
+                </div>
+                <div class="inputbox">
+                    <span>Gender :</span> 
+                    <input type="radio" name="gen">male<input type="radio" name="gen"> women <input type="radio" name="gen">other
+                </div>
+                <div class="inputbox">
+                    <span>E-Mail :</span>
+                    <input type="email" placeholder="exa">
+                </div>
+                <div class="inputbox">
+                    <span>Address :</span>
+                    <input type="text" placeholder="H.no:,colony,lacality">
+                </div>
+                <div class="inputbox">
+                    <span>State :</span>
+                    <input type="text" placeholder="state">
+                </div>
+                <div class="inputbox">
+                    <span>Nationality :</span>
+                    <input type="text" placeholder="country">
+                </div>
+            <div class="col">                                      <!--               paymentdetails               --> 
+                    <h1>Payment Details</h1>
+                    <div class="inputbox">
+                        <span>Cards accepted :</span>
+                        <img class="pglogo" src="https://upload.wikimedia.org/wikipedia/commons/b/b7/MasterCard_Logo.svg" alt="mastercard" >
+                        <img class="pglogo" src="https://upload.wikimedia.org/wikipedia/commons/d/d1/RuPay.svg" alt="rupay" >
+                        <img class="pglogo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Visa_Inc._logo.svg/640px-Visa_Inc._logo.svg.png" alt="visa"   >
+                    </div>
+                    <div class="inputbox">
+                        <span>Card no :</span>
+                        <input type="number" placeholder="0000-0000-0000">
+                    </div>
+                    <div class="inputbox">
+                        <span>expiry date :</span>
+                        <input type="date" placeholder="DD-MM-YY">
+                    </div>
+                    <div class="inputbox">
+                        <span>cvv no :</span>
+                        <input type="number" placeholder="0000">
+                    </div>
+                    <div class="inputbox">
+                        <span>Nationality :</span>
+                        <input type="text" placeholder="country">
+                    </div>
+                    <div class="pbutton">                             <!--   edit the button   -->
+                        <input class="pgbutton" type="button" value="submit details" >
+                    </div>
+    
+            </div>
+        </div>
+    
+   
+    
+</body>
+</html>
